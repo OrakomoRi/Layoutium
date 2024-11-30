@@ -1,0 +1,12 @@
+.button {
+	padding: .5rem 1rem;
+	cursor: pointer;
+	border: none;
+	border-radius: var(--border-radius);
+	transition: background-color .3s;
+}
+
+.button:focus-visible {
+	outline: none;
+	outline: .1rem solid rgba(255, 255, 255, .75);
+}

@@ -1,0 +1,102 @@
+.translator {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	max-width: 40rem;
+	padding: 1rem;
+	background-color: rgba(30, 30, 30, .25);
+	backdrop-filter: blur(.25rem);
+	border-radius: var(--border-radius);
+	border: .1rem solid rgba(255, 255, 255, .25);
+	box-shadow: 0px 0 .5rem .5rem rgba(0, 0, 0, .1);
+}
+
+@media screen and (max-width: 1366px) {
+	.translator {
+		max-width: 35rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.translator {
+		max-width: 25rem;
+	}
+}
+
+.translator > h2 {
+	text-align: center;
+}
+
+.examples {
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+}
+
+.examples p {
+	width: fit-content;
+	display: inline-flex;
+	gap: .25rem;
+	align-items: center;
+	height: fit-content;
+}
+
+span.language {
+	border-radius: var(--border-radius);
+	background-color: rgb(16, 174, 202);
+	padding: .25rem;
+}
+
+textarea {
+	display: inline-flex;
+	width: 100%;
+	min-height: 5rem;
+	padding: .5rem;
+	color: rgb(255, 255, 255);
+	background-color: rgba(30, 30, 30, .5);
+	font-size: 1rem;
+	border-radius: var(--border-radius);
+	border: .1rem solid rgba(255, 255, 255, .25);
+	resize: vertical;
+}
+
+@media screen and (max-width: 768px) {
+	textarea {
+		min-height: 8rem;
+	}
+}
+
+textarea:focus {
+	outline: none;
+}
+textarea:focus-visible {
+	border-color: rgba(255, 255, 255, .5);
+}
+
+.translate-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.clear-btn {
+	display: inline-flex;
+	width: fit-content;
+	background-color: rgb(175, 76, 76);
+	color: rgb(255, 255, 255);
+}
+
+.clear-btn:hover {
+	background-color: rgb(211, 90, 90);
+}
+
+.swap-btn {
+	display: inline-flex;
+	width: fit-content;
+	background-color: rgb(83, 76, 175);
+	color: rgb(255, 255, 255);
+}
+
+.swap-btn:hover {
+	background-color: rgb(90, 81, 218);
+}

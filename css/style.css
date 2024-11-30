@@ -1,0 +1,37 @@
+@import url('/css/elements/header.css');
+@import url('/css/elements/container.css');
+@import url('/css/elements/button.css');
+@import url('/css/elements/translator.css');
+@import url('/css/elements/footer.css');
+
+:root {
+	--border-radius: .25rem;
+	--breezeum-border-radius: var(--border-radius);
+}
+
+html {
+	font-size: 16px;
+}
+
+@media screen and (max-width: 1366px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: Arial, sans-serif;
+	transition: background-color .2s, color .2s;
+	background: rgb(30, 30, 30) url('../images/background.gif') center / cover no-repeat;
+	backdrop-filter: grayscale(25%);
+	color: rgb(255, 255, 255);
+}

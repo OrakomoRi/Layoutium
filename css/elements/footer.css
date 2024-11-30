@@ -1,0 +1,20 @@
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+}
+
+.footer p {
+	font-size: 1.125rem;
+}
+
+.footer a {
+	text-decoration: none;
+	color: rgb(175, 175, 175);
+	transition: color .2s ease;
+}
+
+.footer a:hover {
+	color: rgb(255, 255, 255);
+}

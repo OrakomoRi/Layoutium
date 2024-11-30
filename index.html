@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="images/icon.svg">
+	<title>Layoutium</title>
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/components/BreeziumSelect.css">
+
+	<!-- JS -->
+	<script src="js/logic/buttons.js" defer></script>
+	<script src="js/components/BreeziumSelect.js" defer></script>
+	<script src="js/translators/PageTranslator.js" defer></script>
+	<script src="js/translators/TextTranslator.js" defer></script>
+	<script src="js//translators/TranslationMiddleware.js" defer></script>
+	<!-- main.js should be the last one (initialization of classes) -->
+	<script src="js/main.js" defer></script>
+</head>
+
+<body>
+	<header class="header">
+		<h1 class="logo">Layoutium</h1>
+		<div class="breezeum-select languages"></div>
+	</header>
+	<main class="container">
+		<div class="translator">
+			<h2 data-i18n="Layoutium is a website that helps you translate texts into the right layout!"></h2>
+			<section class="examples">
+				<h3 data-i18n="Examples:"></h3>
+				<p><span class="language">EN</span><span>to</span><span class="language">RU</span><span>"Ghbdtn? rfr ;bpym" == "Привет, как жизнь"</span></p>
+				<p><span class="language">RU</span><span>to</span><span class="language">EN</span><span>"Раму а тшсу вфн" == "Have a nice day"</span></p>
+			</section>
+			<textarea id="inputText"></textarea>
+			<div class="translate-buttons">
+				<buttton class="button clear-btn" data-i18n="Clear" tabindex="0"></buttton>
+				<buttton class="button swap-btn" data-i18n="Swap languages" tabindex="0"></buttton>
+			</div>
+			<textarea id="outputText" readonly data-i18n="Result..." disabled></textarea>
+			<input type="hidden" name="direction" id="directionValue">
+		</div>
+	</main>
+	<footer class="footer">
+		<p>&copy; 2024 <a href="https://github.com/OrakomoRi">OrakomoRi</a></p>
+	</footer>
+</body>
+
+</html>
