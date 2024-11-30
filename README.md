@@ -4,7 +4,7 @@
 
 A lightweight web application for real-time text and interface translation. Users can translate text between two languages, swap translation directions, and switch the interface language seamlessly. Built with vanilla JavaScript for simplicity and efficiency.
 
-### [Website](https://orakomori.github.io/Layoutium/)
+### [Website](https://layoutium.vercel.app/)
 
 ### [Changelog](https://github.com/OrakomoRi/Layoutium/blob/main/CHANGELOG.md)
 
@@ -12,7 +12,7 @@ A lightweight web application for real-time text and interface translation. User
 
 ### Run
 
-1. Open the [website](https://orakomori.github.io/Layoutium/) in your browser.
+1. Open the [website](https://layoutium.vercel.app/) in your browser.
 2. Start translating text instantly — no setup required!
 
 ### Clone the repo
