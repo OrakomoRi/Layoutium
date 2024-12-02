@@ -32,8 +32,8 @@ body {
 	min-height: 100vh;
 	max-height: 100vh;
 	font-family: Arial, sans-serif;
-	transition: background-color .2s;
+	color: rgb(255, 255, 255);
 	background: rgb(30, 30, 30) url('../images/background.gif') center / cover no-repeat;
 	backdrop-filter: grayscale(25%);
-	color: rgb(255, 255, 255);
+	transition: background-color .2s;
 }

@@ -1,6 +1,10 @@
 .wrapper {
 	overflow: hidden auto;
 
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
 	--track-color: #404040;
 	--thumb-color: #848484;
 	--thumb-width: 8px;
