@@ -24,30 +24,32 @@
 </head>
 
 <body>
-	<header class="header">
-		<h1 class="logo">Layoutium</h1>
-		<div class="breezeum-select languages"></div>
-	</header>
-	<main class="container">
-		<div class="translator">
-			<h2 data-i18n="Layoutium is a website that helps you translate texts into the right layout!"></h2>
-			<section class="examples">
-				<h3 data-i18n="Examples:"></h3>
-				<p><span class="language">EN</span><span>to</span><span class="language">RU</span><span>"Ghbdtn? rfr ;bpym" == "Привет, как жизнь"</span></p>
-				<p><span class="language">RU</span><span>to</span><span class="language">EN</span><span>"Раму а тшсу вфн" == "Have a nice day"</span></p>
-			</section>
-			<textarea id="inputText"></textarea>
-			<div class="translate-buttons">
-				<buttton class="button clear-btn" data-i18n="Clear" tabindex="0"></buttton>
-				<buttton class="button swap-btn" data-i18n="Swap languages" tabindex="0"></buttton>
+	<div class="wrapper">
+		<header class="header">
+			<h1 class="logo">Layoutium</h1>
+			<div class="breezeum-select languages"></div>
+		</header>
+		<main class="container">
+			<div class="translator">
+				<h2 data-i18n="Layoutium is a website that helps you translate texts into the right layout!"></h2>
+				<section class="examples">
+					<h3 data-i18n="Examples:"></h3>
+					<p><span class="language">EN</span><span>to</span><span class="language">RU</span><span>"Ghbdtn? rfr ;bpym" == "Привет, как жизнь"</span></p>
+					<p><span class="language">RU</span><span>to</span><span class="language">EN</span><span>"Раму а тшсу вфн" == "Have a nice day"</span></p>
+				</section>
+				<textarea id="inputText"></textarea>
+				<div class="translate-buttons">
+					<buttton class="button clear-btn" data-i18n="Clear" tabindex="0"></buttton>
+					<buttton class="button swap-btn" data-i18n="Swap languages" tabindex="0"></buttton>
+				</div>
+				<textarea id="outputText" readonly data-i18n="Result..." disabled></textarea>
+				<input type="hidden" name="direction" id="directionValue">
 			</div>
-			<textarea id="outputText" readonly data-i18n="Result..." disabled></textarea>
-			<input type="hidden" name="direction" id="directionValue">
-		</div>
-	</main>
-	<footer class="footer">
-		<p>&copy; 2024 <a href="https://github.com/OrakomoRi">OrakomoRi</a></p>
-	</footer>
+		</main>
+		<footer class="footer">
+			<p>&copy; 2024 <a href="https://github.com/OrakomoRi">OrakomoRi</a></p>
+		</footer>
+	</div>
 </body>
 
 </html>

@@ -1,0 +1,28 @@
+.wrapper {
+	overflow: hidden auto;
+
+	--track-color: #404040;
+	--thumb-color: #848484;
+	--thumb-width: 8px;
+	--thumb-radius: 0px;
+}
+
+.wrapper::-webkit-scrollbar {
+	width: var(--thumb-width);
+}
+
+.wrapper::-webkit-scrollbar-track {
+	background: var(--track-color);
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+	background: var(--thumb-color);
+	border-radius: var(--thumb-radius);
+}
+
+@supports not selector(::-webkit-scrollbar) {
+	.wrapper {
+		scrollbar-color: var(--thumb-color)
+						var(--track-color);
+	}
+}

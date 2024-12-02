@@ -1,3 +1,11 @@
+## [1.0.1] - 2024-12-02
+
+### Added
+
+- A wrapper for the content on the page.
+
+---
+
 ## [1.0.0] - 2024-11-30
 
 ### Added

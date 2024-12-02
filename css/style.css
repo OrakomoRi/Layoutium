@@ -1,3 +1,4 @@
+@import url('/css/elements/wrapper.css');
 @import url('/css/elements/header.css');
 @import url('/css/elements/container.css');
 @import url('/css/elements/button.css');
@@ -29,8 +30,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	max-height: 100vh;
 	font-family: Arial, sans-serif;
-	transition: background-color .2s, color .2s;
+	transition: background-color .2s;
 	background: rgb(30, 30, 30) url('../images/background.gif') center / cover no-repeat;
 	backdrop-filter: grayscale(25%);
 	color: rgb(255, 255, 255);
