@@ -10,7 +10,7 @@ class PageTranslator {
 	 */
 	async loadTranslations(language) {
 		try {
-			const response = await fetch(`/data/translations/${language}.json`);
+			const response = await fetch(`/data/lang/${language}.json`);
 			this.translations = await response.json();
 			this.currentLanguage = language;
 			localStorage.setItem('language', language);

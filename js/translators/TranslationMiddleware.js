@@ -2,7 +2,6 @@ const TranslationMiddleware = {
 	// Updating the translation when changing the interface language
 	async handleLanguageChange(language) {
 		await pageTranslator.changeLanguage(language); // Use TranslationController to handle language change
-		this.updatePlaceholders(); // Update text prompts in input/textarea
 	},
 
 	// Updating text translation when changing direction
