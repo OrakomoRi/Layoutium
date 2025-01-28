@@ -47,21 +47,22 @@ class PageTranslator {
 	 * @param {Array} languages Array of language options with codes and names
 	 */
 	setupLanguageSelect(languages) {
-		const selectorContainer = document.querySelector('.breezeum-select.languages');
+		const header = document.querySelector('header.header');
 
 		const options = languages.map((language) => ({
 			name: language.code, // Uses `code` instead of `name`
 			code: language.code,
 		}));
 
-		new BreeziumSelect(
-			selectorContainer,
+		var breeziumSelect = new BreeziumSelect(
 			options,
 			async (language) => {
 				await this.changeLanguage(language);
 			},
 			languages.find((lang) => lang.code === this.currentLanguage)?.code
 		);
+
+		breeziumSelect.render(header);
 	}
 
 	/**
