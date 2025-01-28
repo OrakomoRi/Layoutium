@@ -51,15 +51,20 @@ class PageTranslator {
 
 		const options = languages.map((language) => ({
 			name: language.code, // Uses `code` instead of `name`
-			code: language.code,
+			value: language.code,
 		}));
+
+		const defaultOption = {
+			name: languages.find((lang) => lang.code === this.currentLanguage)?.code,
+			value: languages.find((lang) => lang.code === this.currentLanguage)?.code,
+		}
 
 		var breeziumSelect = new BreeziumSelect(
 			options,
 			async (language) => {
 				await this.changeLanguage(language);
 			},
-			languages.find((lang) => lang.code === this.currentLanguage)?.code
+			defaultOption
 		);
 
 		breeziumSelect.render(header);
